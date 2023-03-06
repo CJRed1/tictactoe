@@ -1,6 +1,60 @@
+html {
+    background: url('images/bg.png');
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
 /* Heading */
 
 h1 {
-    color: crimson;
+    color: rgb(255, 192, 204);
     font-size: 45px;
+}
+
+/* Main Container */
+
+#main {
+    text-align: center;   
+}
+
+/* Instructions */
+
+#ins {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(182, 219, 255);
+    font-size: 17px;
+}
+
+/* Grid */
+#a1, #a2, #a3, #b1, #b2, #b3, #c1, #c2, #c3 {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border: 3px solid yellowgreen;
+    border-radius: 10px;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Reset */
+
+#but {
+    width: 95px;
+    height: 40px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(53, 8, 95);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Player Space */
+
+#print {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(182, 219, 255);
+    font-size: 20px;
 }
