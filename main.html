@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>funny title</title>
-    <!-- CSS link -->
+    <!-- Links -->
     <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
 </head>
 
 <body>
@@ -18,29 +19,30 @@
 
         <!-- Instructions -->
         <p id="ins">What to do:</p>
-        <p>Click on any box to mark it<br><br>First player starts as <b>O</b><br>Second player starts as <b>X</b></p>
+        <p>Click on any box to mark it<br><br>First player starts as <b>X</b><br>Second player starts as <b>O</b></p>
 
         <br><br>
 
         <!-- Grid -->
-        <input type="text" id="a1">
-        <input type="text" id="a2">
-        <input type="text" id="a3">
+        <input type="text" id="a1" onclick="turnCheck_1(); boxPlacing()" readonly>
+        <input type="text" id="a2" onclick="turnCheck_2(); boxPlacing()" readonly>
+        <input type="text" id="a3" onclick="turnCheck_3(); boxPlacing()" readonly>
         <br><br>
-        <input type="text" id="b1">
-        <input type="text" id="b2">
-        <input type="text" id="b3">
+        <input type="text" id="b1" onclick="turnCheck_4(); boxPlacing()" readonly>
+        <input type="text" id="b2" onclick="turnCheck_5(); boxPlacing()" readonly>
+        <input type="text" id="b3" onclick="turnCheck_6(); boxPlacing()" readonly>
         <br><br>
-        <input type="text" id="c1">
-        <input type="text" id="c2">
-        <input type="text" id="c3">
+        <input type="text" id="c1" onclick="turnCheck_7(); boxPlacing()" readonly>
+        <input type="text" id="c2" onclick="turnCheck_8(); boxPlacing()" readonly>
+        <input type="text" id="c3" onclick="turnCheck_9(); boxPlacing()" readonly>
         <!-- Grid end -->
         <br><br><br>
         <!-- Restart BTN -->
-        <button id="but">Restart</button>
+        <button id="but" onclick="gameReset()">Restart</button>
         <br><br>
         <!-- Show turn -->
-        <p id="print">test</p>
+        <p id="print"></p>
+        <img id="playerImg" src="" alt="">
     </div>
 </body>
 </html>
