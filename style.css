@@ -51,6 +51,14 @@ h1 {
     cursor: pointer;
 }
 
+#imgBut {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(53, 8, 95, 0);
+    border-color: rgba(53, 8, 95, 0);
+    cursor: pointer;
+}
+
 /* Player Space */
 
 #print {

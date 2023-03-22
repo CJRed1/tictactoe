@@ -24,17 +24,17 @@
         <br><br>
 
         <!-- Grid -->
-        <input type="text" id="a1" onclick="turnCheck_1(); boxPlacing()" readonly>
-        <input type="text" id="a2" onclick="turnCheck_2(); boxPlacing()" readonly>
-        <input type="text" id="a3" onclick="turnCheck_3(); boxPlacing()" readonly>
+        <input type="text" id="a1" onclick="turnCheck_1(); boxChecking()" readonly>
+        <input type="text" id="a2" onclick="turnCheck_2(); boxChecking()" readonly>
+        <input type="text" id="a3" onclick="turnCheck_3(); boxChecking()" readonly>
         <br><br>
-        <input type="text" id="b1" onclick="turnCheck_4(); boxPlacing()" readonly>
-        <input type="text" id="b2" onclick="turnCheck_5(); boxPlacing()" readonly>
-        <input type="text" id="b3" onclick="turnCheck_6(); boxPlacing()" readonly>
+        <input type="text" id="b1" onclick="turnCheck_4(); boxChecking()" readonly>
+        <input type="text" id="b2" onclick="turnCheck_5(); boxChecking()" readonly>
+        <input type="text" id="b3" onclick="turnCheck_6(); boxChecking()" readonly>
         <br><br>
-        <input type="text" id="c1" onclick="turnCheck_7(); boxPlacing()" readonly>
-        <input type="text" id="c2" onclick="turnCheck_8(); boxPlacing()" readonly>
-        <input type="text" id="c3" onclick="turnCheck_9(); boxPlacing()" readonly>
+        <input type="text" id="c1" onclick="turnCheck_7(); boxChecking()" readonly>
+        <input type="text" id="c2" onclick="turnCheck_8(); boxChecking()" readonly>
+        <input type="text" id="c3" onclick="turnCheck_9(); boxChecking()" readonly>
         <!-- Grid end -->
         <br><br><br>
         <!-- Restart BTN -->
@@ -42,7 +42,9 @@
         <br><br>
         <!-- Show turn -->
         <p id="print"></p>
-        <img id="playerImg" src="" alt="">
+        <button id="imgBut" onclick="animImage()">
+            <img id="playerImg" src="" alt="">
+        </button>
     </div>
 </body>
 </html>
